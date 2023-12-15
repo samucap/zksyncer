@@ -11,3 +11,7 @@ go install
 
 #### Running
 go run *.go
+
+
+#### TODO
+    - tests to track transaction flow and verify success

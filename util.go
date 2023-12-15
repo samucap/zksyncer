@@ -7,12 +7,11 @@ import (
 
 func errHandler(err error) {
 	if err != nil {
-		log.Panic(err)
+		fmt.Printf("Error >>>>>>>>>>>> %+v\n", err)
+		panic(err)
 	}
 }
 
-func printer(s []interface{}) {
-	for _, item := range s {
-		fmt.Printf(">>>>>>>>>>>> %+v\n", item)
-	}
+func printer(s interface{}) {
+	log.Printf("printando >>>>>>>>>>>>>>> %v", s)
 }
