@@ -30,13 +30,13 @@ func main() {
 	errHandler(err)
 	defer ethCl.Close()
 
-	acct := common.HexToAddress(privateKey)
-	bal, err := ethCl.BalanceAt(context.Background(), acct, nil)
-	errHandler(err)
-	printer(weiToEther(bal))
-
 	w, err := accounts.NewWallet(common.Hex2Bytes(privateKey), &zkClient, ethCl)
 	errHandler(err)
+
+	bridgeToL2(w, zkClient, ethCl)
+}
+
+func bridgeToL2(w *accounts.Wallet, zkClient clients.Client, ethCl *ethclient.Client) {
 	// Show balance before deposit
 	balance, err := w.Balance(context.Background(), utils.EthAddress, nil)
 	errHandler(err)
