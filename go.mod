@@ -4,6 +4,7 @@ go 1.21.4
 
 require (
 	github.com/ethereum/go-ethereum v1.12.0
+	github.com/shopspring/decimal v1.3.1
 	github.com/zksync-sdk/zksync2-go v0.3.2
 )
 
