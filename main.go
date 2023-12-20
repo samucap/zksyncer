@@ -16,7 +16,9 @@ var (
 	//PrivateKey        = os.Getenv("PRIVATE_KEY")
 	privateKey     = "da00d59541d59b4b257ea8a2702d221f7deecc2025a86d3b9e66bb43d54f3532"
 	zkSyncProvider = "https://sepolia.era.zksync.dev"
-	ethProvider    = "https://sepolia.infura.io/v3/de4d9283b6f04c07a5d4d5d16ca31291"
+	//ethProvider    = "https://sepolia.infura.io/v3/de4d9283b6f04c07a5d4d5d16ca31291"
+	//ethProvider = "https://eth-sepolia.g.alchemy.com/v2/CjnjKlh6O1s0NOi9qP86MsCcwULTKQqM"
+	ethProvider = "https://rpc.ankr.com/eth_sepolia"
 )
 
 func main() {

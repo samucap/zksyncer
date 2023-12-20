@@ -1,0 +1,13 @@
+services:
+  accountant:
+    build: .
+    networks:
+      - account-net
+    volumes:
+      - accounts:$HOME/keystore
+    tty: true
+    stdin_open: true
+networks:
+  account-net:
+volumes:
+  accounts:
