@@ -1,6 +1,7 @@
 #### zkSync Transacions
 
 1. Bridge ETH to zkSync bridge
+3. Swap
 2. Transfer to liquidity pool
 
 #### Dependencies

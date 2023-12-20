@@ -17,7 +17,7 @@ func errHandler(err error) {
 }
 
 func printer(s interface{}) {
-	log.Printf("printando >>>>>>>>>>>>>>> %v", s)
+	log.Printf("printando >>>>>>>>>>>>>>> %+v", s)
 }
 
 func weiToEther(wei *big.Int) *big.Float {
