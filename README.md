@@ -42,3 +42,16 @@ centralized exchange -> eth account -> bridge to zksync -> transactions
             * https://www.quicknode.com/pricing
 
     seems like response 429 is too many requests error
+
+######### Swaps
+    * https://syncswap.gitbook.io/syncswap/
+    * https://pancakeswap.finance/
+    * https://zkswap.finance/swap
+    * https://app.mute.io/swap
+    * https://app.spacefi.io/#/home
+    * https://app.xy.finance/
+    * https://izumi.finance/trade/swap
+    * https://app.velocore.xyz/swap
+    * https://docs.eralend.com/
+
+######### Contracts

@@ -12,13 +12,16 @@ import (
 	"github.com/zksync-sdk/zksync2-go/utils"
 )
 
+// TODO put privatekey to env or secrets somewhere
 var (
 	//PrivateKey        = os.Getenv("PRIVATE_KEY")
 	privateKey     = "da00d59541d59b4b257ea8a2702d221f7deecc2025a86d3b9e66bb43d54f3532"
 	zkSyncProvider = "https://sepolia.era.zksync.dev"
 	//ethProvider    = "https://sepolia.infura.io/v3/de4d9283b6f04c07a5d4d5d16ca31291"
 	//ethProvider = "https://eth-sepolia.g.alchemy.com/v2/CjnjKlh6O1s0NOi9qP86MsCcwULTKQqM"
-	ethProvider = "https://rpc.ankr.com/eth_sepolia"
+	//ethProvider = "https://goerli.infura.io/v3/de4d9283b6f04c07a5d4d5d16ca31291"
+	ethProvider = "https://eth-goerli.g.alchemy.com/v2/TwC0w-mQvNL4ANOpLgEp1uTEXJJBNNRn"
+	//ethProvider = "https://rpc.ankr.com/eth_sepolia"
 )
 
 func main() {
@@ -47,12 +50,12 @@ func bridgeToL2(w *accounts.Wallet, zkClient clients.Client, ethCl *ethclient.Cl
 	// Perform deposit
 	tx, err := w.Deposit(nil, accounts.DepositTransaction{
 		Token:  utils.EthAddress,
-		Amount: toWei(0.001, 18),
+		Amount: toWei(0.005, 18),
 		To:     w.Address(),
 	})
 	errHandler(err)
 
-	fmt.Println("L1 transaction: ", tx.Hash())
+	fmt.Println("L1 transaction hash: ", tx.Hash())
 
 	// Wait for deposit transaction to be finalized on L1 network
 	fmt.Println("Waiting for deposit transaction to be finalized on L1 network")
