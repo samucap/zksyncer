@@ -18,3 +18,23 @@ SyncSwapStablePoolFactory
 
 SyncSwapRouter
 0xB3b7fCbb8Db37bC6f572634299A58f51622A847e
+
+	- goerli
+
+WETH
+0x20b28b1e4665fff290650586ad76e977eab90c5d
+
+SyncSwapVault
+0x6C41e61C5449B0916103d536c638E470bbabf95e
+
+SyncSwapPoolMaster
+0x4bEAC45efEE4DfB45f7397C19c13a89611dE193D
+
+SyncSwapClassicPoolFactory
+0xeaeDD100A9e61CE0412664CE598F0a624CFB3ccB
+
+SyncSwapStablePoolFactory
+0x51372e0F0BfAa5be848762AE828D1a24bb0d7Fa0
+
+SyncSwapRouter
+0x4dbcd68F735e91ccBa5dff2d4DAb7B0729BBc1a4

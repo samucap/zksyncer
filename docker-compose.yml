@@ -1,12 +1,14 @@
 services:
-  accountant:
+  acct-manager:
     build: .
     networks:
       - account-net
     volumes:
-      - accounts:$HOME/keystore
+      - accounts:/home/.ethereum/goerli/keystore
     tty: true
     stdin_open: true
+    ports:
+      - "8080"
 networks:
   account-net:
 volumes:
