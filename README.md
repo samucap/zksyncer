@@ -44,6 +44,11 @@ centralized exchange -> eth account -> bridge to zksync -> transactions
     seems like response 429 is too many requests error
 
 ######### Swaps
+### 
+#####17991413/russ/#### TODO
+### Blockchain Real Estate
+##11992829185### 
+### 
     * https://syncswap.gitbook.io/syncswap/
     * https://pancakeswap.finance/
     * https://zkswap.finance/swap
@@ -57,4 +62,7 @@ centralized exchange -> eth account -> bridge to zksync -> transactions
 ######### Contracts
 
 
-######### TODO
+
+    - https://consensys.io/blockchain-use-cases/real-estate
+
+    - Identity system for purchasing of real estate
