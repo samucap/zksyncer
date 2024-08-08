@@ -6,12 +6,12 @@ import (
 
 var (
 	//zkSyncProvider = "https://sepolia.era.zksync.dev"
-	//ethProvider    = "https://sepolia.infura.io/v3/de4d9283b6f04c07a5d4d5d16ca31291"
-	//ethProvider = "https://eth-sepolia.g.alchemy.com/v2/CjnjKlh6O1s0NOi9qP86MsCcwULTKQqM"
-	//ethProvider = "https://goerli.infura.io/v3/de4d9283b6f04c07a5d4d5d16ca31291"
-	//ethProvider = "https://eth-goerli.g.alchemy.com/v2/TwC0w-mQvNL4ANOpLgEp1uTEXJJBNNRn"
+	//ethProvider    = "https://sepolia.infura.io/v3/"
+	//ethProvider = "https://eth-sepolia.g.alchemy.com/v2/"
+	//ethProvider = "https://goerli.infura.io/v3/"
+	//ethProvider = "https://eth-goerli.g.alchemy.com/v2/-mQvNL4ANOpLgEp1uTEXJJBNNRn"
 	//ethProvider = "https://rpc.ankr.com/eth_sepolia"
-	//"https://sepolia.infura.io/v3/de4d9283b6f04c07a5d4d5d16ca31291"
+	//"https://sepolia.infura.io/v3/"
 	zeroAddr = common.HexToAddress("0x0000000000000000000000000000000000000000")
 	ethAddr  = common.HexToAddress("0x000000000000000000000000000000000000800A")
 	weth     = "0x20b28b1e4665fff290650586ad76e977eab90c5d"
