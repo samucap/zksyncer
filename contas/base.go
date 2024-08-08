@@ -13,6 +13,7 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 
 	"github.com/samucap/zksyncer/contracts/syncswap/classicPoolFactory"
+	"github.com/samucap/zksyncer/types"
 )
 
 type Network struct {
@@ -97,12 +98,12 @@ func (acct *Account) GetTransaction(ctx context.Context) *bind.TransactOpts {
 	fmt.Println(">>>>>>>>>>>", pool)
 	return &tx
 
-	//tx := &types.Transaction712{
-	//	Nonce: nonce,
-	//	To: to,
-	//	Value: value,
-	//	ChainID: acct.Network.ChainID,
-	//}
+	tx := &types.Transaction712{
+		Nonce:   nonce,
+		To:      to,
+		Value:   value,
+		ChainID: acct.Network.ChainID,
+	}
 	// getNonce from client
 	//calc gas
 
